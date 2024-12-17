@@ -1,9 +1,13 @@
 # 包含-包
 
 
+
 luci-app-cloudflared
 luci-app-ddns
-dnsmasq-full
+network->ddns-cloudflare
+basesystem->dnsmasq-full
+basesystem->block-mount
+luci
 luci-app-ssr-plus
 luci-app-wol
 luci-app-upnp
@@ -14,7 +18,6 @@ luci-app-unblockmusic
 luci-app-vlmcsd
 
 luci-compat
-luci-mod-dashboard
 
 #CONFIG_DEFAULT_luci-app-nlbwmon=y
 #CONFIG_DEFAULT_luci-app-turboacc=y
