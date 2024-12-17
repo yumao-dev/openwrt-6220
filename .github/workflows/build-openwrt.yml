@@ -118,7 +118,7 @@ jobs:
         name: openwrt-config-${{ env.DEVICE_NAME }}-${{ env.FILE_DATE }}
         path: /tmp/upload
 
-    - name: Download package
+    - name: Download package 
       if: github.event.inputs.output != 'config' && !cancelled()
       id: package
       run: |
@@ -129,6 +129,7 @@ jobs:
         find dl -size -1024c -exec rm -f {} \;
 
     - name: Compile the firmware
+      if: github.event.inputs.output != 'config' && success() && !cancelled()
       id: compile
       run: |
         cd openwrt
