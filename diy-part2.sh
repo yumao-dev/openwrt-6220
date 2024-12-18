@@ -13,4 +13,4 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 # https://github.com/kenzok8/small-package 删除冲突文件
-#rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
+rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
