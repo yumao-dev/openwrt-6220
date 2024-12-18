@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt test
+name: Build OpenWrt openwrt-23.05
 
 on:
   repository_dispatch:
@@ -24,7 +24,7 @@ on:
           - config
       ssh:
         description: 'SSH connection to Actions'
-        required: true
+        required: false
         default: 'false'
 
 env:
@@ -119,7 +119,7 @@ jobs:
         path: /tmp/upload
 
     - name: Download package 
-      if: github.event.inputs.output != 'config' && !cancelled()
+      if: github.event.inputs.output != 'config' && success() && !cancelled()
       id: package
       run: |
         cd openwrt
