@@ -30,7 +30,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  FEEDS_CONF: feeds1.conf.default
+  FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./netgear/.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
@@ -119,7 +119,7 @@ jobs:
         path: /tmp/upload
 
     - name: Download package 
-      if: github.event.inputs.output != 'config' && !cancelled()
+      if: github.event.inputs.output != 'config' && success() && !cancelled()
       id: package
       run: |
         cd openwrt
