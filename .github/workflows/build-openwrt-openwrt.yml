@@ -11,7 +11,7 @@
 name: Build OpenWrt openwrt-23.05
 
 on:
-  repository_dispatch:
+  # repository_dispatch:
   workflow_dispatch:
     inputs:
       output:
