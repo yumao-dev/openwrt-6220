@@ -2,9 +2,8 @@
 
 
 
-luci-app-cloudflared
 luci-app-ddns
-network->ddns-cloudflare
+network->ipadressAndName->ddns-cloudflare
 basesystem->dnsmasq-full
 basesystem->block-mount
 luci
