@@ -30,7 +30,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  FEEDS_CONF: ./netgear/lede/feeds1.conf.default
+  FEEDS_CONF: ./netgear/lede/feeds113113.conf.default
   CONFIG_FILE: ./netgear/lede/.config
   DIY_P1_SH: ./netgear/lede/diy-part1.sh
   DIY_P2_SH: ./netgear/lede/diy-part2.sh
