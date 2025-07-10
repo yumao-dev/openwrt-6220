@@ -115,7 +115,7 @@ jobs:
       if: steps.organize_config.outputs.status == 'success' && !cancelled()
       uses: actions/upload-artifact@main
       with:
-        name: openwrt-config-${{ env.DEVICE_NAME }}-${{ env.FILE_DATE }}
+        name: openwrt-config-test-${{ env.DEVICE_NAME }}-${{ env.FILE_DATE }}
         path: /tmp/upload
 
     - name: Download package 
