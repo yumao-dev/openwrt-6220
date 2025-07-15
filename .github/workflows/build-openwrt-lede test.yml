@@ -31,9 +31,9 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: 20230609
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: ./netgear/lede_test/.config
-  DIY_P1_SH: ./netgear/lede_test/diy-part1.sh
-  DIY_P2_SH: ./netgear/lede_test/diy-part2.sh
+  # CONFIG_FILE: ./netgear/lede_test/.config
+  # DIY_P1_SH: ./netgear/lede_test/diy-part1.sh
+  # DIY_P2_SH: ./netgear/lede_test/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
